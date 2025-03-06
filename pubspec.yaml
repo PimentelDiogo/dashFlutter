@@ -1,0 +1,29 @@
+name: dashpy
+description: "WorkSpaceMobile Support Dashboard"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  file_picker: ^5.5.0
+  excel: ^2.1.0
+  syncfusion_flutter_charts: ^23.2.7
+  provider: ^6.0.5
+  path_provider: ^2.0.15
+  speech_to_text: ^6.3.0
+  flutter_tts: ^3.8.3
+  permission_handler: ^10.4.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
