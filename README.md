@@ -32,35 +32,22 @@ The application follows the MVVM (Model-View-ViewModel) architecture pattern:
 Arquitetura
 O aplicativo segue o padrão de arquitetura MVVM (Model-View-ViewModel):
 
-
 dashpy/
-├── lib/
+├── lib/                           # Código fonte do aplicativo
+│   ├── main.dart                  # Ponto de entrada e componentes de UI
+│   ├── models/                    # Modelos de dados
+│   │   └── ticket.dart            # Modelo de dados do ticket
+│   ├── viewmodels/                # Lógica de negócios
+│   │   └── dashboard_viewmodel.dart  # ViewModel principal para o painel
+│   ├── services/                  # Serviços externos
+│   │   ├── excel_service.dart     # Processamento de arquivos Excel
+│   │   └── voice_service.dart     # Reconhecimento de voz e TTS
+│   └── widgets/                   # Componentes de UI reutilizáveis
+│       ├── bar_chart_widget.dart  # Visualização de gráfico de barras
+│       └── pie_chart_widget.dart  # Visualização de gráfico de pizza
+├── assets/                        # Recursos estáticos
+└── pubspec.yaml                   # Dependências
 
-│   ├── main.dart
-
-│   ├── models/
-
-│   │   └── ticket.dart
-
-│   ├── viewmodels/
-
-│   │   └── dashboard_viewmodel.dart
-
-│   ├── services/ 
-
-│   │   ├── excel_service.dart 
-
-│   │   └── voice_service.dart
-
-│   └── widgets/ 
-
-│       ├── bar_chart_widget.dart 
-
-│       └── pie_chart_widget.dart 
-
-├── assets/
-
-└── pubspec.yaml
 
 ## Excel File Processing
 
